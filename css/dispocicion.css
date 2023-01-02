@@ -17,6 +17,12 @@
     bottom: 10%;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .espacio-0 {
     margin-top: 1%;
 }

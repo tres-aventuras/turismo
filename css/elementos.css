@@ -1,9 +1,15 @@
 body {
-    position: relative;
+    background-image: url("/imagenes/fondo-inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     box-sizing: border-box;
-    margin: 0px;
     width: 100vw;
     height: 100vh;
+
+    position: relative;
+    margin: 0px;
+    
     font-family: 'Outfit', sans-serif;
 }
 

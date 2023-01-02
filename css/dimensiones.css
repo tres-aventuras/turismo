@@ -36,3 +36,8 @@
 .central {
     max-width: max-content;
 }
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+}
