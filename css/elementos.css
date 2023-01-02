@@ -1,0 +1,12 @@
+body {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

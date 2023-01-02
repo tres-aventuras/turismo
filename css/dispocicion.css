@@ -1,0 +1,55 @@
+.barra {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.titulo {
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.pie {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+}
+
+.espacio-0 {
+    margin-top: 1%;
+}
+
+.espacio-1 {
+    margin-top: 3%;
+}
+
+.espacio-2 {
+    margin-top: 10%;
+}
+
+.espacio-3 {
+    margin-top: 20%;
+}
+
+.detras {
+    z-index: -1;
+}
+
+.elevado-1 {
+    box-shadow: 2px 2px 5px var(--surface);
+    z-index: 0;
+}
+
+.elevado-2 {
+    box-shadow: 5px 5px 5px var(--surface);
+    z-index: 1;
+}
+
+.central {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

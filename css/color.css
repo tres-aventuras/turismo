@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Source+Sans+Pro:wght@700&display=swap');
+
+:root {
+    --primary: #f2ba33;
+    --secondary: #c04402;
+    --background: #111;
+    --surface: #000;
+    --error: #b00020;
+    --on-primary: #000;
+    --on-secondary: #fff;
+    --on-surface: #f2ba33;
+    --on-error: #fff;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.barra {
+    background-color: var(--primary);
+    opacity: 0.7;
+}
+
+.borde {
+    border: 5px solid red;
+}
+
+.boton {
+    width: max-content;
+    height: max-content;
+    margin: 5px 20px;
+    padding: 15px;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
