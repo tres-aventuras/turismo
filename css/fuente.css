@@ -5,3 +5,8 @@
 .titulo-fuente {
     font-size: 18px;
 }
+
+.overlay-fuente {
+    font-size: 10vh;
+    text-shadow: 5px 5px 5px var(--surface);
+}

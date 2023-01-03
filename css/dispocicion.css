@@ -61,18 +61,33 @@
 }
 
 .elevado-1 {
-    box-shadow: 2px 2px 5px 3px var(--surface);
+    box-shadow: 2px 2px 5px var(--surface);
+    z-index: 1;
+}
+
+.texto-elevado-1 {
+    text-shadow: 2px 2px 5px var(--surface);
     z-index: 1;
 }
 
 .elevado-2 {
-    box-shadow: 5px 5px 5px 3px var(--surface);
+    box-shadow: 5px 5px 10px var(--surface);
+    z-index: 2;
+}
+
+.texto-elevado-2 {
+    text-shadow: 5px 5px 10px var(--surface);
     z-index: 2;
 }
 
 .elevado-3 {
-    box-shadow: 5px 5px 20px 3px var(--surface);
+    box-shadow: 7px 7px 15px var(--surface);
     z-index: 3;
+}
+
+.texto-elevado-3 {
+    text-shadow: 7px 7px 15px var(--surface);
+    z-index: 2;
 }
 
 .central {
@@ -81,15 +96,46 @@
     margin-right: auto;
 }
 
+.derecha {
+    overflow: hidden;
+    float: right;
+    margin-right: 20%;
+}
+
+.izquierda {
+    overflow: hidden;
+    float: left;
+    margin-left: 5%;
+}
+
 .boton {
     display: block;
     position: relative;
     float: left;
 }
 
-.overlay-1, .overlay-2, .overlay-3 {
+.overlay {
     position: absolute;
-    top: 0px;
+    top: 0;
+    left: 0;
+}
+
+.overlay-fuente {
+    position: fixed;
+    top: 43vh;
+    left: 50vw;
+}
+
+.overlay-1 {
+    position: fixed;
+    top: 0vh;
+    left: 80vw;
+}
+
+.overlay-2 {
+    position: fixed;
+    top: 0vh;
+    left: 93vw;
 }
 
 
