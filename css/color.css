@@ -2,7 +2,7 @@
 
 :root {
     --primary: #f2b933;
-    --primary-traslucent: rgb(242, 185, 51, 0.65);
+    --primary-traslucent: rgb(242, 185, 51, 0.8);
     --secondary: #c04402;
     --background: #111;
     --surface: #000;
@@ -22,6 +22,10 @@
     color: var(--on-primary);
 }
 
+.on-furface {
+    color: var(--on-surface)
+}
+
 .barra {
     background-color: var(--primary-traslucent);
     backdrop-filter: blur(5px);
@@ -34,8 +38,11 @@
 .boton {
     width: max-content;
     height: max-content;
+
     margin: 5px 20px;
     padding: 15px;
+    
+    border-radius: 10px;
     background-color: var(--primary);
     color: var(--on-primary);
     font-weight: bold;

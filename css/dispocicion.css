@@ -1,3 +1,9 @@
+.lienzo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .barra {
     position: relative;
     top: 0px;
@@ -10,17 +16,15 @@
     margin-left: 15px;
 }
 
+.video-inicio {
+    position: absolute;
+}
+
 .pie {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10%;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 3%;
 }
 
 .espacio-0 {
@@ -28,7 +32,7 @@
 }
 
 .espacio-1 {
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .espacio-2 {
@@ -36,21 +40,39 @@
 }
 
 .espacio-3 {
+    margin-top: 15%;
+}
+
+.espacio-4 {
     margin-top: 20%;
 }
 
-.detras {
+.espacio-5 {
+    margin-top: 25%;
+}
+
+.detras-1 {
     z-index: -1;
 }
 
-.elevado-1 {
-    box-shadow: 2px 2px 5px var(--surface);
+.sin-elevar {
+    box-shadow: none;
     z-index: 0;
 }
 
-.elevado-2 {
-    box-shadow: 5px 5px 5px var(--surface);
+.elevado-1 {
+    box-shadow: 2px 2px 5px 3px var(--surface);
     z-index: 1;
+}
+
+.elevado-2 {
+    box-shadow: 5px 5px 5px 3px var(--surface);
+    z-index: 2;
+}
+
+.elevado-3 {
+    box-shadow: 5px 5px 20px 3px var(--surface);
+    z-index: 3;
 }
 
 .central {
@@ -58,4 +80,16 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.boton {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.overlay-1, .overlay-2, .overlay-3 {
+    position: absolute;
+    top: 0px;
+}
+
 

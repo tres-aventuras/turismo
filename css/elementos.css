@@ -1,14 +1,13 @@
-body {
-    background-image: url("/imagenes/fondo-inicio.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+body { 
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
 
     position: relative;
     margin: 0px;
+
+    overflow: hidden;
+    background-color: var(--background);
     
     font-family: 'Outfit', sans-serif;
 }

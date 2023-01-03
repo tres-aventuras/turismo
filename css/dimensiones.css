@@ -1,11 +1,25 @@
-.viewport-dimensiones {
+.lienzo {
     width: 100vw;
     height: 100vh;
+}
+
+.cubrir-ancho {
+    width: 100vw;
+    height: auto;
+}
+
+.cubrir-alto {
+    height: 100vh;
+    width: auto;    
 }
 
 .barra {
     width: 100vw;
     height: 70px;
+}
+
+.pie {
+
 }
 
 .inicio-dimensiones {
@@ -37,7 +51,7 @@
     max-width: max-content;
 }
 
-.overlay {
+.overlay-1, .overlay-2, .overlay-3 {
     width: 100vw;
     height: 100vh;
 }
