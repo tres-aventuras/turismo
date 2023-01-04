@@ -97,13 +97,11 @@
 }
 
 .derecha {
-    overflow: hidden;
     float: right;
     margin-right: 20%;
 }
 
 .izquierda {
-    overflow: hidden;
     float: left;
     margin-left: 5%;
 }
@@ -120,7 +118,7 @@
     left: 0;
 }
 
-.overlay-logo {
+.overlay-titulo {
     position: fixed;
     top: 28vh;
     left: 50vw;

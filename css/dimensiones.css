@@ -46,3 +46,8 @@
 .central {
     max-width: max-content;
 }
+
+.overlay-logo {
+    width: 33vw;
+    height: auto;
+}
