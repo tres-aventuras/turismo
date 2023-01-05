@@ -56,3 +56,7 @@
 .titulo-fuente {
     color: var(--on-primary);
 }
+
+.nav-link {
+    color: var(--on-primary);
+}
