@@ -4,7 +4,7 @@
     --primary: #f2b933;
     --primary-traslucent: rgb(242, 185, 51, 0.8);
     --secondary: #c04402;
-    --background: #111;
+    --background: #222;
     --surface: #000;
     --error: #b00020;
     --on-primary: #000;
@@ -59,4 +59,10 @@
 
 .nav-link {
     color: var(--on-primary);
+}
+
+.nav-resaltado {
+    color: var(--on-secondary);
+    background-color: var(--secondary);
+    border-bottom: 5px solid var(--on-primary);
 }

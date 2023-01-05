@@ -171,3 +171,9 @@
     margin-left: 12%;
     margin-right: 12%
 }
+
+.nav-link {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}

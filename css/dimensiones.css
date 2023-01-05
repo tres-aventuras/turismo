@@ -51,3 +51,8 @@
     width: 33vw;
     height: auto;
 }
+
+.nav-link {
+    box-sizing: border-box;
+    height: 70px;
+}
