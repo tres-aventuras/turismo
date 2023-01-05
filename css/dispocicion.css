@@ -22,9 +22,8 @@
 
 .pie {
     position: absolute;
-    left: 0;
-    right: 0;
     bottom: 3%;
+    left: 0;
 }
 
 .espacio-0 {
@@ -98,7 +97,6 @@
 
 .derecha {
     float: right;
-    margin-right: 20%;
 }
 
 .izquierda {
@@ -121,19 +119,31 @@
 .overlay-titulo {
     position: fixed;
     top: 28vh;
-    left: 50vw;
+
+    animation-name: slide-titulo;
+    animation-duration: 0.8s;
+    animation-delay: 102.4s;
+    animation-fill-mode: both;
 }
 
 .overlay-1 {
     position: fixed;
     top: 0vh;
-    left: 80vw;
+
+    animation-name: slide-1;
+    animation-duration: 1s;
+    animation-delay: 102.2s;
+    animation-fill-mode: both;
 }
 
 .overlay-2 {
     position: fixed;
     top: 0vh;
-    left: 93vw;
+
+    animation-name: slide-2;
+    animation-duration: 1.2s;
+    animation-delay: 102s;
+    animation-fill-mode: both;
 }
 
 
