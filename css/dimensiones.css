@@ -35,12 +35,13 @@
 }
 
 .titulo-icono {
-    width: 100px;
-    height: auto;
+    width: 140px;
+    height: 43px;
 }
 
 .titulo-texto {
     width: 140px;
+    line-height: 1em;
 }
 
 .central {

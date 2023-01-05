@@ -101,7 +101,6 @@
 
 .izquierda {
     float: left;
-    margin-left: 5%;
 }
 
 .boton {
@@ -122,7 +121,7 @@
 
     animation-name: slide-titulo;
     animation-duration: 0.8s;
-    animation-delay: 102.4s;
+    animation-delay: 33.4s;
     animation-fill-mode: both;
 }
 
@@ -132,7 +131,7 @@
 
     animation-name: slide-1;
     animation-duration: 1s;
-    animation-delay: 102.2s;
+    animation-delay: 33.2s;
     animation-fill-mode: both;
 }
 
@@ -142,8 +141,33 @@
 
     animation-name: slide-2;
     animation-duration: 1.2s;
-    animation-delay: 102s;
+    animation-delay: 33s;
     animation-fill-mode: both;
 }
 
+.separacion-0 {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.separacion-1 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.separacion-2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.separacion-3{
+    margin-left: 7%;
+    margin-right: 7%;
+}
 
+.separacion-4 {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.separacion-5 { 
+    margin-left: 12%;
+    margin-right: 12%
+}

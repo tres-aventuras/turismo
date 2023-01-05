@@ -32,7 +32,7 @@
 }
 
 .borde {
-    border: 5px solid red;
+    border: 1px solid red;
 }
 
 .boton {
@@ -51,4 +51,8 @@
 
 .boton:hover {
     cursor: pointer;
+}
+
+.titulo-fuente {
+    color: var(--on-primary);
 }

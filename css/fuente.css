@@ -3,7 +3,9 @@
 }
 
 .titulo-fuente {
-    font-size: 18px;
+    line-height: 0.9;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .overlay-fuente {
