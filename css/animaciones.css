@@ -1,5 +1,5 @@
 @keyframes slide-titulo {
-    from{left: -50vw;}
+    from{left: -55vw;}
     to{left: 50vw;}
 }
 
@@ -9,6 +9,6 @@
 }
 
 @keyframes slide-2 {
-    from {left: -25vw;}
+    from {left: -30vw;}
     to {left: 93vw;}
 }

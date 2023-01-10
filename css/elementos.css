@@ -12,6 +12,24 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+body.desplazable {
+    width: 100vw;
+
+    overflow-y: scroll;
+}
+
 a {
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background);
 }

@@ -3,9 +3,10 @@
 :root {
     --primary: #f2b933;
     --primary-traslucent: rgb(242, 185, 51, 0.8);
-    --secondary: #c04402;
+    --secondary: #000;
     --background: #222;
-    --surface: #000;
+    --surface: #444;
+    --shadow: #000;
     --error: #b00020;
     --on-primary: #000;
     --on-secondary: #fff;
@@ -20,6 +21,14 @@
 
 .on-primary {
     color: var(--on-primary);
+}
+
+.background {
+    background-color: var(--background);
+}
+
+.surface {
+    background-color: var(--surface);
 }
 
 .on-surface {
@@ -64,5 +73,18 @@
 .nav-resaltado {
     color: var(--on-secondary);
     background-color: var(--secondary);
-    border-bottom: 5px solid var(--on-primary);
+    border-left: 5px solid var(--primary);
+}
+
+.galeria-elemento {
+    background-color: var(--surface);
+    border-radius: 10px;
+}
+
+.galeria-nombre {
+    color: var(--primary);
+}
+
+.galeria-miniatura {
+    border-radius: 3px;
 }
