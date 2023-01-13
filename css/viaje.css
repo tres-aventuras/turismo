@@ -1,0 +1,22 @@
+.tarjeta {
+    align-items: stretch;
+    justify-content: stretch;
+
+    width: 65vw;
+    height: 65vh;
+}
+
+.mosaico-horizontal {
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+#panel-izquierdo {
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+#panel-derecho {
+    align-self: stretch;
+    flex-grow: 1;
+}

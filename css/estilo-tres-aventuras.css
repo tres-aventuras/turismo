@@ -18,8 +18,12 @@
     --shadow: 2px 2px 5px black;
 }
 
-.borde {
+.borde-rojo {
     border: 1px solid red;
+}
+
+.borde-azul {
+    border: 1px solid blue;
 }
 
 .primary {
@@ -265,9 +269,6 @@ a {
     align-items: flex-start;
     padding: 0px;
 
-    width: 800px;
-    height: 600px;
-
     border-radius: 10px;
     box-shadow: var(--shadow);
 
@@ -275,6 +276,13 @@ a {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.mosaico-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
 }
 
 /** Items con ID */
@@ -295,15 +303,3 @@ a {
     flex-grow: 1;
 }
 
-.mosaico-horizontal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-}
-
-.panel {
-    flex: none;
-    align-self: stretch;
-    flex-grow: 1;
-}
