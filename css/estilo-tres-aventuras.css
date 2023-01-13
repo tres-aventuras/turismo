@@ -1,0 +1,309 @@
+/** Import google fonts Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Source+Sans+Pro:wght@700&display=swap');
+
+/** Esquema de colores */
+:root {
+    --primary: #f2b933;
+    --primary-traslucent: rgb(242, 185, 51, 0.8);
+    --secondary: #000;
+    --background: #222;
+    --surface: #444;
+    --shadow-color: #000;
+    --error: #b00020;
+    --on-primary: #000;
+    --on-secondary: #fff;
+    --on-surface: #f2ba33;
+    --on-error: #fff;
+
+    --shadow: 2px 2px 5px black;
+}
+
+.borde {
+    border: 1px solid red;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+}
+
+.surface {
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+.error {
+    background-color: var(--error);
+    color: var(--on-error);
+}
+
+.background {
+    background-color: var(--background);
+    color: var(--on-secondary);
+}
+
+.on-primary {
+    color: var(--on-primary);
+}
+
+.on-surface {
+    color: var(--on-surface)
+}
+
+/** Etiquetas */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background);
+    
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--on-primary);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background);
+}
+
+/** Items con clase propia */
+.inside-auto-layout{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.lienzo {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pie {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+}
+
+.video-inicio {
+    position: absolute;
+
+    width: 100vw;
+    height: auto;
+}
+
+.barra {
+    z-index: 3;
+
+    background-color: var(--primary-traslucent);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow);
+}
+
+.barra {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.header {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.titulo {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+    /*
+    box-sizing: border-box;
+    width: 140px;
+    height: 65px;
+    */
+}
+
+.titulo-icono {
+    width: 120px;
+    height: 36px;
+}
+
+.titulo-fuente {
+    width: 160px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.extremo-derecho {
+    /* Autolayout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    
+    /*
+    width: 1236px;
+    height: 80px;
+    */
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.nav-links {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding: 0px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.nav-link {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    font-size: 24px;
+    font-weight: 200;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.nav-resaltado {
+    font-weight: bold;
+    color: var(--on-secondary);
+    background-color: var(--secondary);
+    border-left: 5px solid var(--primary);
+}
+
+.boton {
+    width: max-content;
+    height: max-content;
+
+    margin: 5px 20px;
+    padding: 15px;
+
+    display: block;
+    position: relative;
+    float: left;
+    
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    box-shadow: var(--shadow);
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.tarjeta {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 800px;
+    height: 600px;
+
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/** Items con ID */
+#proximo-viaje {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+
+    width: 1440px;
+    height: 944px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.mosaico-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.panel {
+    flex: none;
+    align-self: stretch;
+    flex-grow: 1;
+}

@@ -1,0 +1,57 @@
+@keyframes slide-titulo {
+    from{left: -55vw;}
+    to{left: 50vw;}
+}
+
+@keyframes slide-1 {
+    from{left: -30vw;}
+    to{left: 80vw;}
+}
+
+@keyframes slide-2 {
+    from {left: -30vw;}
+    to {left: 93vw;}
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-titulo {
+    position: absolute;
+    top: 28vh;
+
+    animation: slide-titulo 0.8s ease-in 33.4s 1 normal both running;
+}
+
+.overlay-logo {
+    width: 33vw;
+    height: auto;
+}
+
+.overlay-fuente {
+    font-size: 10vh;
+    text-shadow: 5px 5px 5px black;
+}
+
+.overlay-1 {
+    position: absolute;
+    top: 0;
+
+    height: 100vh;
+    width: auto;
+
+    animation: slide-1 1s ease-in 33.2s 1 normal both running;
+}
+
+.overlay-2 {
+    position: absolute;
+    top: 0;
+
+    height: 100vh;
+    width: auto;
+
+    animation: slide-2 1.2s ease-in 33s 1 normal both running;
+}
