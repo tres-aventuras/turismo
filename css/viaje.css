@@ -1,9 +1,12 @@
+/** Import google fonts Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Source+Sans+Pro:wght@700&display=swap');
+
 .tarjeta {
     align-items: stretch;
     justify-content: stretch;
 
-    width: 65vw;
-    height: 65vh;
+    width: 80vw;
+    height: 80vh;
 }
 
 .mosaico-horizontal {
@@ -12,11 +15,42 @@
 }
 
 #panel-izquierdo {
+    display: flex;
+    flex-direction: column;
     align-self: stretch;
-    flex-grow: 1;
+    order: 0;
+    flex-grow: 0;
+
+    width: 55%;
+
+    padding: 20px;
 }
 
 #panel-derecho {
     align-self: stretch;
+    order: 1;
     flex-grow: 1;
+
+    padding: 20px;
+}
+
+#llamado-accion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    font-family: Outfit;
+    font-weight: normal;
+    font-size: 36px;
+    text-transform: lowercase;
+
+    border-radius: 50px;
+}
+
+.carrusel {
+    width: 40vw;
+    height: 40vh;
 }
