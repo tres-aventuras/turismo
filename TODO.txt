@@ -1,0 +1,2 @@
+1. write the CSS for the carrusel component at proyect level
+2. write the CSS for the carrusel component at page level

@@ -12,7 +12,7 @@
     --error: #b00020;
     --on-primary: #000;
     --on-secondary: #fff;
-    --on-surface: #f2ba33;
+    --on-surface: #fff;
     --on-error: #fff;
 
     --shadow: 5px 5px 5px black;
@@ -100,7 +100,7 @@ a {
     background: var(--background);
 }
 
-/** Items con clase propia */
+/* Componentes */
 .inside-auto-layout{
     flex: none;
     order: 0;
@@ -159,26 +159,20 @@ a {
     padding: 0px;
 }
 
-.titulo {
+.inicio {
     /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-
-    /*
-    box-sizing: border-box;
-    width: 140px;
-    height: 65px;
-    */
 }
 
-.titulo-icono {
+.inicio-icono {
     width: 120px;
     height: 36px;
 }
 
-.titulo-fuente {
+.inicio-fuente {
     width: 160px;
 
     font-size: 20px;
@@ -284,6 +278,7 @@ a {
 }
 
 .mosaico-horizontal {
+    /* Auto layout */
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -291,10 +286,10 @@ a {
 }
 
 .mosaico-vertical {
+    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: flex-end;
     padding: 0;
 }
 
@@ -302,25 +297,52 @@ a {
     /* Auto layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
 }
 
-/** Items con ID */
-#proximo-viaje {
-    /* Auto layout */
+.articulo {
+    /* auto layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 30px;
-
-    width: 1440px;
-    height: 944px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 1;
 }
+
+.titulo {
+    margin-top: 24px;
+    color: var(--on-surface);
+    font-family: Outfit;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.cuerpo-texto {
+    margin-top: 10px;
+    color: var(--on-surface);
+    font-family: Outfit;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.bocadillo {
+    /* autoo layout */
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+
+.chip {
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+#llamado-accion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 

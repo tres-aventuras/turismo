@@ -1,45 +1,65 @@
 /** Import google fonts Outfit */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Source+Sans+Pro:wght@700&display=swap');
 
+#proximo-viaje {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    width: 1440px;
+    height: 944px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
 .tarjeta {
     align-items: stretch;
     justify-content: stretch;
 
-    width: 80vw;
+    width: 90vw;
     height: 80vh;
 }
+
 
 .mosaico-horizontal {
     align-self: stretch;
     flex-grow: 1;
 }
 
+
 #panel-izquierdo {
+    /* auto layout */
     display: flex;
     flex-direction: column;
-    align-self: stretch;
-    order: 0;
-    flex-grow: 0;
-
-    width: 55%;
 
     padding: 20px;
+
+    /* inside auto layout */
+    align-self: stretch;
+    order: 0;
+    flex: 55%;
+
 }
 
 #panel-derecho {
-    align-self: stretch;
-    order: 1;
-    flex-grow: 1;
+    /* auto layout */
+    display: flex;
+    flex-direction: column;
 
     padding: 20px;
+
+    /* inside auto layout */
+    align-self: stretch;
+    order: 1;
+    flex: 45%;
 }
 
-#llamado-accion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
 
 .boton {
     font-family: Outfit;
@@ -54,3 +74,34 @@
     width: 40vw;
     height: 40vh;
 }
+
+.contenido {
+    display: flex;
+}
+*/
+
+/*
+.pagina-1 {
+    display: flex;
+    background-image: url("../imagenes/sentado-lanin-fondo.jpg");
+
+    /* inside auto layout 
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.pagina-2 {
+    display: none;
+    background-image: url("../imagenes/ski.webp");
+
+}
+
+.pagina-3 {
+    display: none;
+    background-image: url("../imagenes/ski2.jpg");
+}
+
+.pagina-4 {
+    display: none;
+    background-image: url("../imagenes/lago-lacar.jpg");
+} */
