@@ -18,9 +18,10 @@
 }
 
 .tarjeta {
+    /*
     align-items: stretch;
     justify-content: center;
-
+*/
     width: 90vw;
     height: 80vh;
 }
