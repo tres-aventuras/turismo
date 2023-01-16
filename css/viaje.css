@@ -18,14 +18,9 @@
 }
 
 .tarjeta {
-    /*
-    align-items: stretch;
-    justify-content: center;
-*/
     width: 90vw;
     height: 80vh;
 }
-
 
 .mosaico-horizontal {
     align-self: stretch;
@@ -36,10 +31,7 @@
     /* auto layout */
     display: flex;
     justify-content: space-between;
-
-    /* inside auto layout */
 }
-
 
 #panel-izquierdo {
     /* auto layout */
