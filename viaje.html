@@ -40,7 +40,7 @@
                     <div class="mosaico-vertical">
                         <div class="carrusel">
                             <div class="contenido">
-                                <div id="pagina-1" class="pagina">
+                                <div id="pagina-1" class="pagina" data-activo>
                                     <img src="./imagenes/sentado-lanin-fondo.jpg">
                                 </div>
                                 <div id="pagina-2" class="pagina">
@@ -54,10 +54,10 @@
                                 </div>
                             </div>
                             <div class="indicadores">
-                                <a class="indicador" onclick="elegir('pagina-1')"> </a>
-                                <a class="indicador" onclick="elegir('pagina-2')"> </a>
-                                <a class="indicador" onclick="elegir('pagina-3')"> </a>
-                                <a class="indicador" onclick="elegir('pagina-4')"> </a>
+                                <a class="indicador" onclick="manejarClick(event)" target="#pagina-1" data-activo> </a>
+                                <a class="indicador" onclick="manejarClick(event)" target="#pagina-2"> </a>
+                                <a class="indicador" onclick="manejarClick(event)" target="#pagina-3"> </a>
+                                <a class="indicador" onclick="manejarClick(event)" target="#pagina-4"> </a>
                             </div>
                         </div>
                         <div id="llamado-accion">
