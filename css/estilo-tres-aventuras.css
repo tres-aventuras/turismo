@@ -313,8 +313,6 @@ a {
     font-size: 14px;
 }
 
-
-
 .chip {
     padding: 7px;
     border-radius: 18px;
@@ -372,10 +370,6 @@ a {
     flex-grow: 1;
 }
 
-.pagina.seleccion {
-    display: flex;
-}
-
 .pagina img {
     width: 95%;
     height: auto;
@@ -402,6 +396,10 @@ a {
 
     justify-content: center;
 
+    background-color: rgba(242, 185, 51, 0.5);
+}
+
+.indicador[data-activo] {
     background-color: rgba(242, 185, 51, 1.0);
 }
 
