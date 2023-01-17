@@ -242,7 +242,7 @@ a {
     box-shadow: var(--shadow);
 
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .boton:hover {
@@ -323,15 +323,6 @@ a {
     padding: 7px;
     border-radius: 18px;
     box-shadow: var(--shadow);
-}
-
-.boton {
-    font-family: Outfit;
-    font-weight: normal;
-    font-size: 24px;
-    text-transform: lowercase;
-
-    border-radius: 50px;
 }
 
 .carrusel {
