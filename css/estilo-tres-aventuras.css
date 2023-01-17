@@ -3,6 +3,10 @@
 
 *, *::after, *::before {
     box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
 }
 
 /** Esquema de colores */
@@ -75,13 +79,8 @@ body {
     overflow: hidden;
     position: relative;
 
-    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-
-    margin: 0;
-    padding: 0;
-
     background-color: var(--background);
     
     font-family: 'Outfit', sans-serif;
@@ -105,34 +104,10 @@ a {
     background: var(--background);
 }
 
-.lienzo {
-    width: 100vw;
-    height: 100vh;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .pie {
     position: absolute;
     bottom: 3%;
     left: 0;
-}
-
-.video-inicio {
-    position: absolute;
-
-    width: 100vw;
-    height: auto;
-}
-
-.barra {
-    z-index: 3;
-
-    background-color: var(--primary-traslucent);
-    backdrop-filter: blur(5px);
-    box-shadow: var(--shadow);
 }
 
 .barra {
@@ -141,12 +116,18 @@ a {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
+    z-index: 3;
 
     /* Inside auto layout */
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+
+    /* Colors and shapes */
+    background-color: var(--primary-traslucent);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow);
 }
 
 .inicio {
@@ -347,6 +328,7 @@ a {
 
 .pagina {
     /* Auto layout */
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
 
