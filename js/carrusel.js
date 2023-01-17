@@ -37,4 +37,4 @@ function activo() {
     return actual;
 }
 
-setInterval(cambiar, 4000);
+setInterval(cambiar, demoraCarrusel);
