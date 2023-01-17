@@ -1,0 +1,6 @@
+.lienzo {
+    align-self: stretch;
+    flex-grow: 1;
+
+    display: flex;
+}

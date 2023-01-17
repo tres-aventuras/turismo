@@ -255,10 +255,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 0;
-
-    display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 
 
@@ -290,7 +288,8 @@ a {
     color: var(--on-surface);
     font-family: Outfit;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .chip {
@@ -327,19 +326,21 @@ a {
 }
 
 .pagina {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    width: 100%;
-    height: 100%;
-
     /* Inside auto layout */
     flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 1;
+    flex-grow: 1;    
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .pagina img {
@@ -374,11 +375,5 @@ a {
 .indicador[data-activo] {
     background-color: rgba(242, 185, 51, 1.0);
 }
-
-/*
-.indicador.activo {
-    background-color: rgba(242, 185, 51, 1.0);
-}
-*/
 
 

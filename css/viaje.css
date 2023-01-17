@@ -22,7 +22,7 @@
     height: 80vh;
 }
 
-#panel-izquierdo {
+.panel-izquierdo {
     /* auto layout */
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
     flex-grow: 1;
 }
 
-#panel-derecho {
+.panel-derecho {
     /* auto layout */
     display: flex;
     flex-direction: column;
@@ -48,14 +48,6 @@
     flex-grow: 1;
 }
 
-#llamado-accion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    padding: 30px 0;
-}
 
 .carrusel {
     width: 40vw;
@@ -69,6 +61,15 @@
     /* inside auto layout */
     align-self: stretch;
     flex-grow: 1;
+}
+
+.llamado-accion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 0;
 }
 
 .boton {
