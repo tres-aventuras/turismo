@@ -70,3 +70,8 @@
     align-self: stretch;
     flex-grow: 1;
 }
+
+.boton {
+    font-weight: regular;
+    font-size: 24px;
+}
