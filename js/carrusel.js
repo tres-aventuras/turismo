@@ -37,4 +37,4 @@ function activo() {
     return actual;
 }
 
-setInterval(cambiar, 3000);
+setInterval(cambiar, 4000);
