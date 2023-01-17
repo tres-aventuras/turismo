@@ -90,6 +90,7 @@ body {
 a {
     text-decoration: none;
     color: var(--on-primary);
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar {
