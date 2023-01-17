@@ -303,7 +303,8 @@ a {
     display: flex;
     flex-direction: column;
 
-    height: auto;
+    height: 100%;
+    width: 100%;
 
     padding: 20px;
 }
@@ -312,8 +313,8 @@ a {
     display:flex;
     flex-direction: row;
 
-    width: 100%;
     height: auto;
+    width: 100%;
 
     overflow: scroll;
     scroll-behavior: smooth;
@@ -343,14 +344,6 @@ a {
     align-items: flex-start;
 }
 
-.pagina img {
-    width: 95%;
-    height: auto;
-
-    border-radius: 20px;
-    box-shadow: var(--shadow);
-}
-
 .indicadores {
     display: flex;
     flex-direction: row;
@@ -376,4 +369,11 @@ a {
     background-color: rgba(242, 185, 51, 1.0);
 }
 
+img {
+    display:flex;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
 

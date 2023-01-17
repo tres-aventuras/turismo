@@ -34,9 +34,98 @@
     </div>
 
     <div class="lienzo">
-        <div class="carrusel borde-azul">
-
+        <div class="carrusel">
+            <div class="contenido">
+                <div id="pagina-1" class="pagina" data-activo>
+                    <div class="mosaico-horizontal">
+                        <div class="panel-izquierdo">
+                            <article class="articulo">
+                                <header class="titulo">
+                                    somos tres aventuras
+                                </header>
+                                <main class="cuerpo-texto">
+                                    <p>Este es un articulo que consta de varias lineas</p>
+                                    <p>El texto en particular va a ir cambiando entre uno y otro uso pero siempre va a estar en un bloque</p>
+                                    <p>Voy a comenzar con cuatro lineas</p>
+                                    <p>Cuatro lineas es mentalmente una buena distribución</p>
+                                </main>
+                            </article>
+                        </div>
+                        <div class="panel-derecho">
+                            <img src="./imagenes/foto-la-cruz.bmp">
+                        </div>
+                    </div>
+                </div>
+                <div id="pagina-2" class="pagina">
+                    <div class="mosaico-horizontal">
+                        <div class="panel-izquierdo">
+                            <article class="articulo">
+                                <header class="titulo">
+                                    joni
+                                </header>
+                                <main class="cuerpo-texto">
+                                    <p>aca describo la cualidad sobresaliente</p>
+                                    <p>aca te cuento de qué manera éste miembro va a enriquecer tu experiencia</p>
+                                    <p>acá ponemos uno o dos trabajos anteriores</p>
+                                    <p>acá aparece qué formación posee</p>
+                                </main>
+                            </article>
+                        </div>
+                        <div class="panel-derecho">
+                            <img src="./imagenes/joni.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div id="pagina-3" class="pagina">
+                    <div class="mosaico-horizontal">
+                        <div class="panel-izquierdo">
+                            <article class="articulo">
+                                <header class="titulo">
+                                    agus
+                                </header>
+                                <main class="cuerpo-texto">
+                                    <p>aca describo la cualidad sobresaliente</p>
+                                    <p>aca te cuento de qué manera éste miembro va a enriquecer tu experiencia</p>
+                                    <p>acá ponemos uno o dos trabajos anteriores</p>
+                                    <p>acá aparece qué formación posee</p>
+                                </main>
+                            </article>
+                        </div>
+                        <div class="panel-derecho">
+                            <img src="./imagenes/agus.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div id="pagina-4" class="pagina">
+                    <div class="mosaico-horizontal">
+                        <div class="panel-izquierdo">
+                            <article class="articulo">
+                                <header class="titulo">
+                                    guille
+                                </header>
+                                <main class="cuerpo-texto">
+                                    <p>aca describo la cualidad sobresaliente</p>
+                                    <p>aca te cuento de qué manera éste miembro va a enriquecer tu experiencia</p>
+                                    <p>acá ponemos uno o dos trabajos anteriores</p>
+                                    <p>acá aparece qué formación posee</p>
+                                </main>
+                            </article>
+                        </div>
+                        <div class="panel-derecho">
+                            <img src="./imagenes/guille.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="indicadores" onmouseover="pausar(true)" onmouseout="pausar(false)">
+                <a class="indicador" onclick="manejarClick(event)" target="#pagina-1" data-activo></a>
+                <a class="indicador" onclick="manejarClick(event)" target="#pagina-2"></a>
+                <a class="indicador" onclick="manejarClick(event)" target="#pagina-3"></a>
+                <a class="indicador" onclick="manejarClick(event)" target="#pagina-4"></a>
+            </div>
         </div>
     </div>
+
+    <script src="./js/carrusel.js"></script>
 </body>
 </html>

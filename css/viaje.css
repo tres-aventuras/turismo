@@ -63,6 +63,14 @@
     flex-grow: 1;
 }
 
+.pagina img {
+    width: 95%;
+    height: auto;
+
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
 .llamado-accion {
     display: flex;
     flex-direction: row;
