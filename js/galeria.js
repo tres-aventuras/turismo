@@ -5,7 +5,7 @@
  */
 
 /** hace un pedido HTTP a instagaram y genera la promesa de obtener los datos */
-const token = "IGQVJXb0pQRmxQaFdybWVwS1Jfd3ctT3puUDVBRWl4SjRXaW1MZAzh2cThMd0RyY1VoZAkhKUUlxYjN0aWhyNnYwNmtCRVBCblpBc2VtU1k1bXh2RVRUXzRKVXlqM1JnelNWT2QwbXRyN2FLOUdwS1JoZAwZDZD";
+const token = "IGQVJYS3VoOURWWlVCNTd3ZAGJWWVQzejVpYTR2TWtZAWlBSbTdBX2tjZAm10RTR6LWlCaXZAEQTl5Qkx2dXVKUnNBX2ZAZASERkT3ZArUEFfNXFTRnJRUnlrcTFZAMmpPdFhqSnhfOE9ndVl1TkRvb2RieHBCMwZDZD";
 const URL = "https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url&access_token=" + token
 const pedidoHTTP = fetch(URL).then(revisar).then(extraer);
 /** Convierte los datos en formato JSON */
@@ -21,15 +21,17 @@ async function extraer (arg) {
  
     console.log(lista);
     const root = ReactDOM.createRoot(document.getElementById('galeria-cuerpo'));
-    root.render(<Galeria url={lista[0].media_url}/>);   
+    root.render(<Galeria caption={lista[0].caption} url={lista[0].thumbnail_url} />);   
 }
 
 /** Componente padre de toda la galeria de imagenes */
 class Galeria extends React.Component {
     render () {
-        return (<video controls>
-                    <source src={this.props.url}/>
-                </video>);    
+        return (
+            <div>
+                <img src={this.props.url} />
+            </div>
+        );    
     }
 }
 
