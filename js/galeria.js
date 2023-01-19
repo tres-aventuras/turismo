@@ -31,9 +31,28 @@ async function extraer(arg) {
 }
 */
 
-const root = ReactDOM.createRoot(document.querySelector(".lienzo"));
-const miImagen = <Imagen url="./imagenes/guille.jpg"></Imagen>;
-const elemento = <Tarjeta contenido={miImagen}></Tarjeta>;
+function encapsularFoto(foto) {
+    const imagen = <Imagen url={foto.url}></Imagen>;
+    const miniatura = <Tarjeta contenido={imagen}></Tarjeta>;
+
+    return miniatura;
+}
+
+async function recopilarFotos() {
+    const contenido = await fetch("../data/fotos.json");
+    const texto = await contenido.text();
+    const fotos = JSON.parse(texto);
+
+    const listaElementosGaleria = fotos.map(encapsularFoto);
+    const cuerpoGaleria = <div className="galeria">{listaElementosGaleria}</div>;
+
+    const root = ReactDOM.createRoot(document.querySelector(".lienzo"));
+    root.render(cuerpoGaleria);
+}
+
+recopilarFotos();
+
+
 
 function Imagen(props) {
     return <img src={props.url}></img>;
@@ -43,5 +62,5 @@ function Tarjeta(props) {
     return <div className="tarjeta">{props.contenido}</div>;
 }
 
-root.render(elemento);
+
 
