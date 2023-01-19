@@ -4,34 +4,44 @@
  *  en una tira vertical desplazable usando React.js para repetir una plantilla
  */
 
+/* Toda esta seccion esta desactivada hasta que vuelva a intentar conectar con IG
+
 /** hace un pedido HTTP a instagaram y genera la promesa de obtener los datos */
 const token = "IGQVJYS3VoOURWWlVCNTd3ZAGJWWVQzejVpYTR2TWtZAWlBSbTdBX2tjZAm10RTR6LWlCaXZAEQTl5Qkx2dXVKUnNBX2ZAZASERkT3ZArUEFfNXFTRnJRUnlrcTFZAMmpPdFhqSnhfOE9ndVl1TkRvb2RieHBCMwZDZD";
 const URL = "https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url&access_token=" + token
-const pedidoHTTP = fetch(URL).then(revisar).then(extraer);
+/** const pedidoHTTP = fetch(URL).then(revisar).then(extraer); */
+
 /** Convierte los datos en formato JSON */
-function revisar (arg) {
+/*
+function revisar(arg) {
     return arg.json();
 }
+*/
 
 /** Una vez que la promesa se cumple (los datos llegan del servidor de instagram) esta funcion devuelve un objeto JSON
  *  con todos los datos pedidos.
  */
-async function extraer (arg) {
+/*
+async function extraer(arg) {
     const lista = await arg.data;
- 
+
     console.log(lista);
     const root = ReactDOM.createRoot(document.getElementById('galeria-cuerpo'));
-    root.render(<Galeria caption={lista[0].caption} url={lista[0].thumbnail_url} />);   
+    root.render(<Galeria caption={lista[0].caption} url={lista[0].thumbnail_url} />);
+}
+*/
+
+const root = ReactDOM.createRoot(document.querySelector(".lienzo"));
+const miImagen = <Imagen url="./imagenes/guille.jpg"></Imagen>;
+const elemento = <Tarjeta contenido={miImagen}></Tarjeta>;
+
+function Imagen(props) {
+    return <img src={props.url}></img>;
 }
 
-/** Componente padre de toda la galeria de imagenes */
-class Galeria extends React.Component {
-    render () {
-        return (
-            <div>
-                <img src={this.props.url} />
-            </div>
-        );    
-    }
+function Tarjeta(props) {
+    return <div className="tarjeta">{props.contenido}</div>;
 }
+
+root.render(elemento);
 
